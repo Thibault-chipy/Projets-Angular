@@ -10,12 +10,23 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { JVComponent } from './jv/jv.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReservationComponent } from './reservation/reservation.component';
+import { ListJVComponent } from './list-jv/list-jv.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     JVComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ReservationComponent,
+    ListJVComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -23,7 +34,13 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatGridListModule
+    
     
   ],
   providers: [],

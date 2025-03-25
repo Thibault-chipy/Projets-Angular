@@ -1,3 +1,13 @@
 <mat-toolbar color="primary">
-Bibliothèque de Jeux Vidéo
+    <span class="site-title">Gestion bibliothèque de Jeux Vidéo</span>
+    <nav class="navigation">
+        <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon>home</mat-icon> Accueil
+        </a>
+        <a mat-button routerLink="/all" routerLinkActive="active-link">
+            <mat-icon>list</mat-icon> Les jeux
+        </a>
+    </nav>
 </mat-toolbar>
+
+<h1>Bienvenue</h1>
