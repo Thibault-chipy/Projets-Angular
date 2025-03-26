@@ -5,7 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { ListJVComponent } from './list-jv/list-jv.component';
-
+import { ListReservationComponent } from './list-reservation/list-reservation.component';
 
 const routes: Routes = [
   {
@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'jv/:id',
     component: JVComponent
+  },
+  {
+    path:'reservations',
+    component: ListReservationComponent
   }
 ];
 

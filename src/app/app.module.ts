@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
+import { ListReservationComponent } from './list-reservation/list-reservation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ReservationComponent,
     ListJVComponent,
+    ListReservationComponent,
 
 
   ],

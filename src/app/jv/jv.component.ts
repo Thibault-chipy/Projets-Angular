@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { JV } from '../models/jv.model';
 import { JvService } from '../services/jv.service';
-import { ActivatedRoute,Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
-@Component({
+@Component({  
   selector: 'app-jv',
   standalone: false,
   templateUrl: './jv.component.html',
@@ -12,8 +12,7 @@ import { ActivatedRoute,Router } from '@angular/router';
 export class JVComponent implements OnInit{
   @Input() jvInput!: JV;
   idJV!: string;
-  jv! : JV;
-  constructor(private jvService: JvService, private routerAct: ActivatedRoute, private router: Router) {}
+  constructor(private jvService: JvService, private routerAct: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.idJV = this.routerAct.snapshot.params['id'];

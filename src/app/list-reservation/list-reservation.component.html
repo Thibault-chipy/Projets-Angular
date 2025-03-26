@@ -1,0 +1,9 @@
+<div class="mat-elevation-z8">
+    <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let uneRes of listeReservation">
+            <mat-card-content>
+            <app-reservation *ngIf="uneRes.id>''" [reservInput]="uneRes"></app-reservation>
+            </mat-card-content>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
