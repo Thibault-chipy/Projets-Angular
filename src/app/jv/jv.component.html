@@ -1,11 +1,13 @@
 <mat-card class="jeu">
-    <mat-card-title class="titreJeu">{{ jvInput.titre }}</mat-card-title>
-    <mat-card-content class="jv-content">
-      <p>Plateforme : {{ jvInput.plateforme }}</p>
-      <p>Genre : {{ jvInput.genre }}</p>
-      <p>Développeur : {{ jvInput.developpeur }}</p>
-      <p>Stock : {{ jvInput.stock }}</p>
-    </mat-card-content>
+  <mat-card-title class="titreJeu">{{ jvInput.titre }}</mat-card-title>
+  <img mat-card-sm-image [src]="jvInput.imageUrl" [alt]="jvInput.titre">
 
-  </mat-card>
-  
+  <mat-card-content class="jv-content">
+    <div class="jv-details">
+      <p><strong>Plateforme:</strong> {{ jvInput.plateforme }}</p>
+      <p><strong>Genre:</strong> {{ jvInput.genre }}</p>
+      <p><strong>Développeur:</strong> {{ jvInput.developpeur }}</p>
+      <p><strong>Stock:</strong> {{ jvInput.stock }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

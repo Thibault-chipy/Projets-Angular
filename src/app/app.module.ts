@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
 import { ListReservationComponent } from './list-reservation/list-reservation.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { ListReservationComponent } from './list-reservation/list-reservation.co
     ReservationComponent,
     ListJVComponent,
     ListReservationComponent,
+    HomeComponent,
 
 
   ],

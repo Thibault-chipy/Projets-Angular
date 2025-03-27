@@ -6,8 +6,9 @@ export class JV{
     developpeur!: string;
     dateSortie!: string;
     stock!: number;
+    imageUrl!: string;
 
-    constructor(id: string, titre: string, plateforme: string, genre: string, developpeur: string, dateSortie: string, stock: number){
+    constructor(id: string, titre: string, plateforme: string, genre: string, developpeur: string, dateSortie: string, stock: number, imageUrl: string){
         this.id = id;
         this.titre = titre;
         this.plateforme = plateforme;
@@ -15,5 +16,6 @@ export class JV{
         this.developpeur = developpeur;
         this.dateSortie = dateSortie;
         this.stock = stock;
+        this.imageUrl = imageUrl;
     }
 }

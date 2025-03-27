@@ -6,7 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { ListJVComponent } from './list-jv/list-jv.component';
 import { ListReservationComponent } from './list-reservation/list-reservation.component';
-
+import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: 'all',
@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path:'reservations',
     component: ListReservationComponent
+  },
+  {
+    path:'',
+    component: HomeComponent
   }
 ];
 
