@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+tableau{
+    width: 100%;
+}
+.statut-confirme{
+    font-size: medium;
+    color: rgb(5, 255, 5);
+    
+}
+.statut-attente{
+    font-size: medium;
+    color: orange;
+}
+.statut-annule{
+    font-size: medium;
+    color: red;
+}

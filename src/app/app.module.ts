@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
 import { JVComponent } from './jv/jv.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -41,7 +42,8 @@ import { ListReservationComponent } from './list-reservation/list-reservation.co
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTableModule
     
     
   ],

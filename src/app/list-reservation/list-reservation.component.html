@@ -1,9 +1,46 @@
-<div class="mat-elevation-z8">
-    <mat-grid-list cols="3">
-        <mat-grid-tile *ngFor="let uneRes of listeReservation">
-            <mat-card-content>
-            <app-reservation *ngIf="uneRes.id>''" [reservInput]="uneRes"></app-reservation>
-            </mat-card-content>
-        </mat-grid-tile>
-    </mat-grid-list>
-</div>
+<h1>Tableau des réservations des clients</h1>
+<table mat-table [dataSource]="listeReservation" class="tableau">
+    <ng-container matColumnDef="idReservation">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.id}} </td>
+    </ng-container>
+    <ng-container matColumnDef="nomClient">
+        <th mat-header-cell *matHeaderCellDef> Nom du client </th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.nomClient}} </td>
+    </ng-container>
+    <ng-container matColumnDef="emailClient">
+        <th mat-header-cell *matHeaderCellDef>Email</th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.emailClient}} </td>
+    </ng-container>
+    <ng-container matColumnDef="numeroTelCli">
+        <th mat-header-cell *matHeaderCellDef> Tél </th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.numeroTelCli}} </td>
+    </ng-container>
+    <ng-container matColumnDef="jeuTitre">
+        <th mat-header-cell *matHeaderCellDef> Jeu </th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.jeuTitre}} </td>
+    </ng-container>
+    <ng-container matColumnDef="plateforme">
+        <th mat-header-cell *matHeaderCellDef> Plateforme </th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.plateforme}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dateReservation">
+        <th mat-header-cell *matHeaderCellDef> Date de réservation </th>
+        <td mat-cell *matCellDef="let reserv"> {{reserv.dateReservation}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="statutReservation">
+        <th mat-header-cell *matHeaderCellDef> Statut de la réservation </th>
+        <td mat-cell *matCellDef="let reserv" [ngClass]="{
+            'statut-confirme': reserv.statutReservation === 'Confirme',
+            'statut-attente': reserv.statutReservation === 'En attente',
+            'statut-annule': reserv.statutReservation === 'Annule'
+        }"> {{reserv.statutReservation}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colonnesAAfficher"></tr>
+    <tr mat-row *matRowDef="let row; columns: colonnesAAfficher;"></tr>
+
+
+</table>
