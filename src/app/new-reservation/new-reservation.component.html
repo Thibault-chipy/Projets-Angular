@@ -1,0 +1,52 @@
+<div class="container mt-4">
+    <h2>Nouvelle Réservation</h2>
+    <form [formGroup]="formulaire" (ngSubmit)="onSubmit()">
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Nom du client</mat-label>
+            <input matInput type="text" formControlName="nomClient" required>
+            <mat-error *ngIf="formulaire.get('nomClient')?.invalid && formulaire.get('nomClient')?.touched">
+                Le nom du client est requis.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email </mat-label>
+            <input matInput type="email" formControlName="emailClient" required>
+            <mat-error *ngIf="formulaire.get('emailClient')?.invalid && formulaire.get('emailClient')?.touched">
+                L'email est requis.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Jeu</mat-label>
+            <mat-select formControlName="jeuTitre" required>
+                <mat-option value="" disabled>Sélectionnez un jeu</mat-option>
+                <mat-option *ngFor="let jeu of listeJeux" [value]="jeu.titre">{{ jeu.titre }}</mat-option>
+            </mat-select>
+            <mat-error *ngIf="formulaire.get('jeuTitre')?.invalid && formulaire.get('jeuTitre')?.touched">
+                Veuillez sélectionner un jeu.
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Plateforme</mat-label>
+            <input matInput type="text" formControlName="plateforme" required>
+            <mat-error *ngIf="formulaire.get('plateforme')?.invalid && formulaire.get('plateforme')?.touched">
+                Veuillez sélectionner une plateforme.
+            </mat-error>
+        </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Date de la réservation</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="dateReservation" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                
+            </mat-form-field>
+
+        <div class="button-group">
+            <button mat-raised-button color="primary" type="submit" [disabled]="!formulaire.valid">Réserver</button>
+            <button mat-raised-button color="warn" type="button" routerLink="/reservations">Annuler</button>
+        </div>
+    </form>
+</div>

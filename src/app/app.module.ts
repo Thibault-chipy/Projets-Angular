@@ -20,6 +20,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
 import { ListReservationComponent } from './list-reservation/list-reservation.component';
 import { HomeComponent } from './home/home.component';
+import { MatButton } from '@angular/material/button';
+import { NewJVComponent } from './new-jv/new-jv.component';
+import { NewReservationComponent } from './new-reservation/new-reservation.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatDatepicker } from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatDialogModule,MatDialog} from '@angular/material/dialog';
+import { SupprimerReservationComponent } from './supprimer-reservation/supprimer-reservation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +38,9 @@ import { HomeComponent } from './home/home.component';
     ListJVComponent,
     ListReservationComponent,
     HomeComponent,
+    NewJVComponent,
+    NewReservationComponent,
+    SupprimerReservationComponent,
 
 
   ],
@@ -45,8 +56,12 @@ import { HomeComponent } from './home/home.component';
     MatInputModule,
     MatSelectModule,
     MatGridListModule,
-    MatTableModule
-    
+    MatTableModule,
+    ReactiveFormsModule,
+    MatButton,
+    MatDatepicker,
+    MatDatepickerModule,
+    MatDialogModule,
     
   ],
   providers: [],

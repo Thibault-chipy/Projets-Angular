@@ -1,4 +1,8 @@
-<h1>Tableau des réservations enregistrées   </h1>
+<h2>Ajouter une réservation</h2>
+
+<a class="button" routerLink="/new-reservation">Nouvelle réservation</a>
+
+<h1>Tableau des réservations enregistrées</h1>
 <table mat-table [dataSource]="listeReservation" class="tableau">
     <ng-container matColumnDef="idReservation">
         <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -39,6 +43,16 @@
         }"> {{reserv.statutReservation}} </td>
     </ng-container>
 
+    <ng-container matColumnDef="Actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let reserv">
+            <button mat-button (click)="modifier(reserv.id)">Modifier</button>
+            <button mat-icon-button color="warn" (click)="supprimer(reserv.id)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+    
     <tr mat-header-row *matHeaderRowDef="colonnesAAfficher"></tr>
     <tr mat-row *matRowDef="let row; columns: colonnesAAfficher;"></tr>
 

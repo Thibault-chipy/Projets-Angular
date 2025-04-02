@@ -1,53 +1,51 @@
-.mat-elevation-z8 {
-    background: #fff; // Couleur de fond blanche
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); // Ombre personnalisée
-  }
-  
-  mat-grid-list {
-    gap: 50px; // Espacement entre les tiles
-  }
-  
-  mat-grid-tile {
-    background: transparent !important; // Pour éviter la couleur de fond par défaut
-  }
-  
-  mat-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 90px; // Hauteur minimale pour le contenu
-    justify-content: space-between;
-    overflow: hidden;
+.list-jv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-    p {
-        margin: 8px 0;
-        font-size: clamp(0.8rem, 2vw, 1rem); // Taille de texte responsive
-        line-height: 1.2;
-    }
+mat-grid-list {
+  width: 90%;
+  max-width: 1200px;
+}
 
-    .mat-card-subtitle {
-        font-size: clamp(0.7rem, 1.8vw, 0.9rem); // Taille plus petite pour les sous-titres
-    }
+mat-grid-tile {
+  display: flex;
+  padding: 10px;
+}
 
-    .mat-card-title {
-        font-size: clamp(1rem, 2.2vw, 1.3rem); // Taille pour les titres
-        margin-bottom: 8px;
-    }
-  }
+.game-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.jeu-card {
+  width: 100%;
+  max-width: 280px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+
   
-  mat-card-actions {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
 
-  mat-grid-tile:hover {
+  &:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
   }
+}
 
+.jeu-card img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-
+.jeu-card mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

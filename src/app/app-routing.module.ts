@@ -7,6 +7,12 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { ListJVComponent } from './list-jv/list-jv.component';
 import { ListReservationComponent } from './list-reservation/list-reservation.component';
 import { HomeComponent } from './home/home.component';
+import { NewJVComponent } from './new-jv/new-jv.component';
+import { NewReservationComponent } from './new-reservation/new-reservation.component';
+import { MatButton } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 const routes: Routes = [
   {
     path: 'all',
@@ -23,6 +29,10 @@ const routes: Routes = [
   {
     path:'',
     component: HomeComponent
+  },
+  {
+    path:'new-reservation',
+    component: NewReservationComponent
   }
 ];
 

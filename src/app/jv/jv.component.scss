@@ -1,26 +1,56 @@
-.jeu{
-    background-color: purple;
-    box-sizing: border-box;
-    box-shadow: lightcyan;
-    p{
-        text-decoration: bold;
-        font-size:medium;
-        color: white;
-
-    }
-.titreJeu{
-    color: white;
-    font-size: large;
-    text-align: center;
-}
-    
-
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-    width: 100px;
+:host {
     display: block;
-    margin: 0 auto;
-}
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+
+  mat-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+  }
+  
+  .jeu-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: purple;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .jv-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  p {
+    margin: 0;
+    strong {
+      color: #222;
+    }
+  }
+  

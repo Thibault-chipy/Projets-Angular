@@ -1,13 +1,33 @@
-<mat-card class="jeu">
-  <mat-card-title class="titreJeu">{{ jvInput.titre }}</mat-card-title>
-  <img mat-card-sm-image [src]="jvInput.imageUrl" [alt]="jvInput.titre">
 
-  <mat-card-content class="jv-content">
-    <div class="jv-details">
-      <p><strong>Plateforme:</strong> {{ jvInput.plateforme }}</p>
-      <p><strong>Genre:</strong> {{ jvInput.genre }}</p>
-      <p><strong>Développeur:</strong> {{ jvInput.developpeur }}</p>
-      <p><strong>Stock:</strong> {{ jvInput.stock }}</p>
-    </div>
-  </mat-card-content>
-</mat-card>
+
+<div class="jeu-container">
+  <mat-card>
+    <mat-card-title class="jeu-title">{{ jvInput.titre }}</mat-card-title>
+    <img mat-card-sm-image [src]="jvInput.imageUrl" [alt]="jvInput.titre">
+
+    <mat-card-content class="jv-content">
+      <div class="detail-container">
+        <p><strong>Plateforme:</strong> {{ jvInput.plateforme }}</p>
+        <p><strong>Genre:</strong> {{ jvInput.genre }}</p>
+        <p><strong>Développeur:</strong> {{ jvInput.developpeur }}</p>
+        <p><strong>Stock:</strong> {{ jvInput.stock }}</p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+  <!-- 
+  <h2>Réservations associés</h2>
+  <mat-card class="reservations">
+    <mat-card-header>
+      <mat-card-title>Réservations</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngFor="let reservation of listeReservation">
+        <p><strong>Nom du client:</strong> {{ reservation.nomClient }}</p>
+        <p><strong>Email:</strong> {{ reservation.emailClient }}</p>
+        <p><strong>Téléphone:</strong> {{ reservation.numeroTelCli }}</p>
+        <p><strong>Date de réservation:</strong> {{ reservation.dateReservation | date }}</p>
+        <p><strong>Statut:</strong> {{ reservation.statutReservation }}</p>
+        <hr>
+      </div>
+    </mat-card-content> -->

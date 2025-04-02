@@ -20,4 +20,18 @@ export class ReservationService {
 
   } 
 
+  getReservationByJV(jeuTitre:string): Observable<Reservation[]>{
+    return this.http.get<Reservation[]>('http://localhost:3000/Reservations?jeuTitre='+jeuTitre);  
+  }
+
+
+  addReservation(reservation: Reservation): Observable<Reservation>{
+    return this.http.post<Reservation>('http://localhost:3000/Reservations',reservation);  
+  }
+  updateReservation(reservation: Reservation): Observable<Reservation>{
+    return this.http.put<Reservation>('http://localhost:3000/Reservations/'+reservation.id,reservation);  
+  }
+  deleteReservation(id:string): Observable<Reservation>{
+    return this.http.delete<Reservation>('http://localhost:3000/Reservations/'+id);  
+  }
 }

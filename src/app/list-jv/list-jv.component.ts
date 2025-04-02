@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation} from '@angular/core';
 import { JvService } from '../services/jv.service';
 import { JV } from '../models/jv.model';
 import { Router } from '@angular/router';
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   standalone: false,
   templateUrl: './list-jv.component.html',
   styleUrl: './list-jv.component.scss',
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class ListJVComponent implements OnInit {
   listeJV!: JV[];

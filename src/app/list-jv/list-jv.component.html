@@ -1,12 +1,11 @@
-<div class="mat-elevation-z8">
-    <mat-grid-list cols="3">
+<div class="mat-elevation-z8 list-jv">
+    <mat-grid-list cols="3" class="game-card">
         <mat-grid-tile *ngFor="let unJV of listeJV">
             <mat-card-content>
-            <app-jv *ngIf="unJV.stock>0" [jvInput]="unJV"></app-jv>
-            <mat-card-actions *ngIf="unJV.stock>0">
-                <button mat-button color="primary" (click)="voir(unJV.id)">voir</button>
-              </mat-card-actions>
-            </mat-card-content>
+                <a (click)="voir(unJV.id)">
+                     <app-jv *ngIf="unJV.stock>0" [jvInput]="unJV" class="jeu-card"></app-jv>
+                </a>
+            </mat-card-content> 
         </mat-grid-tile>
     </mat-grid-list>
 </div>
