@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ReservationComponent implements OnInit {
   @Input() reservInput!: Reservation;
-  idReserv!: string;
+  idReserv!:  number;
 
   constructor(
     private reservationService: ReservationService,

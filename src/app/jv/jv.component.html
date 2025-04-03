@@ -15,19 +15,5 @@
     </mat-card-content>
   </mat-card>
 </div>
-  <!-- 
-  <h2>Réservations associés</h2>
-  <mat-card class="reservations">
-    <mat-card-header>
-      <mat-card-title>Réservations</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <div *ngFor="let reservation of listeReservation">
-        <p><strong>Nom du client:</strong> {{ reservation.nomClient }}</p>
-        <p><strong>Email:</strong> {{ reservation.emailClient }}</p>
-        <p><strong>Téléphone:</strong> {{ reservation.numeroTelCli }}</p>
-        <p><strong>Date de réservation:</strong> {{ reservation.dateReservation | date }}</p>
-        <p><strong>Statut:</strong> {{ reservation.statutReservation }}</p>
-        <hr>
-      </div>
-    </mat-card-content> -->
+
+<a (click)="voirReservations(jvInput.titre)">Voir les réservations de ce jeu.</a>

@@ -1,9 +1,8 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { JV } from '../models/jv.model';
 import { JvService } from '../services/jv.service';
-import { ActivatedRoute } from '@angular/router';
-import { Reservation } from '../models/reservation.model';
-import { ReservationService } from '../services/reservation.service';
+import { ActivatedRoute,Router } from '@angular/router';
+
 @Component({  
   selector: 'app-jv',
   standalone: false,
@@ -13,9 +12,8 @@ import { ReservationService } from '../services/reservation.service';
 })
 export class JVComponent implements OnInit{
   @Input() jvInput!: JV;
-  listeReservation!: Reservation[];
   idJV!: string;
-  constructor(private jvService: JvService, private routerAct: ActivatedRoute, private reserveServ: ReservationService) {}
+  constructor(private jvService: JvService, private routerAct: ActivatedRoute, private router:Router) {}
 
   ngOnInit(): void {
     this.idJV = this.routerAct.snapshot.params['id'];
@@ -27,11 +25,8 @@ export class JVComponent implements OnInit{
     } 
   }
 
-  // On va chercher les réservations du jeu vidéo
-  getReservations() {
-    this.reserveServ.getReservations().subscribe((reservations) => {
-      this.listeReservation = reservations.filter((reservation) => reservation.jeuTitre === this.jvInput.titre);
-    });
+  voirReservations(jeuTitre: string) {
+    this.router.navigate(['/reservations-jeu', jeuTitre]);
   }
 
 

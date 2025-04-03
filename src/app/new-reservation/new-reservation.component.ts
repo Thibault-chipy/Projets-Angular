@@ -27,7 +27,7 @@ formulaire!: FormGroup;
 reservation!: Reservation;
 thumbRegex!: RegExp;
 listeJeux!: JV[];
-
+listeStatut :  string[] = ["En attente", "Confirmee", "Annulee"];
 
   constructor(private reservationService: ReservationService, private router: Router, private http: HttpClient, private formBuilder: FormBuilder, private jeuxService: JvService) {}
 
@@ -45,7 +45,7 @@ listeJeux!: JV[];
 
     this.formulaire.valueChanges.subscribe((value) => {
       this.reservation = {
-        id: "0",
+        id: 0,
         nomClient: value.nomClient, 
         numeroTelCli: value.numeroTelClient,
         emailClient: value.emailClient,
@@ -74,7 +74,7 @@ listeJeux!: JV[];
 
   onSubmit() {
     let newReservation: Reservation= {
-      id: "0",
+      id: 0,
       nomClient: this.formulaire.get("nomClient")?.value,
       numeroTelCli: this.formulaire.get("numeroTelClient")?.value,
       emailClient: this.formulaire.get("emailClient")?.value,

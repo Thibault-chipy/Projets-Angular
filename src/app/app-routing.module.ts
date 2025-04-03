@@ -11,7 +11,8 @@ import { NewJVComponent } from './new-jv/new-jv.component';
 import { NewReservationComponent } from './new-reservation/new-reservation.component';
 import { MatButton } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { ModifierReservationComponent } from './modifier-reservation/modifier-reservation.component';
+import { ReservationJeuComponent } from './reservation-jeu/reservation-jeu.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,14 @@ const routes: Routes = [
   {
     path:'new-reservation',
     component: NewReservationComponent
+  },
+  {
+    path:'modifier-reservation/:id',
+    component: ModifierReservationComponent
+  },
+  {
+    path:"reservations-jeu/:titre",
+    component: ReservationJeuComponent
   }
 ];
 

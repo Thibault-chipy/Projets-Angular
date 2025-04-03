@@ -1,0 +1,186 @@
+{
+  "JVS": [
+    {
+      "id": "1",
+      "titre": "The Last of Us Part II",
+      "plateforme": "PlayStation",
+      "genre": "Action-Aventure",
+      "developpeur": "Naughty Dog",
+      "dateDeSortie": "2020-06-19",
+      "stock": 5,
+      "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202010/2618/Y02ljdBodKFBiziorYgqftLE.png"
+    },
+    {
+      "id": "2",
+      "titre": "Cyberpunk 2077",
+      "plateforme": "PC",
+      "genre": "RPG",
+      "developpeur": "CD Projekt",
+      "dateDeSortie": "2020-12-10",
+      "stock": 0,
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/bZgtwC0yYc0vDZ1ptKNHMTk9.png"
+    },
+    {
+      "id": "3",
+      "titre": "Halo Infinite",
+      "plateforme": "Xbox",
+      "genre": "FPS",
+      "developpeur": "343 Industries",
+      "dateDeSortie": "2021-12-08",
+      "stock": 3,
+      "imageUrl": "https://content.halocdn.com/media/Default/community/InfiniteCoverArt/halo_infinite_wallpaper-tablet_2048x2048-1b3a567b688a431ca2dfa63648a4e090.jpg"
+    },
+    {
+      "id": "4",
+      "titre": "The Legend of Zelda: Breath of the Wild",
+      "plateforme": "Nintendo Switch",
+      "genre": "Action-Aventure",
+      "developpeur": "Nintendo",
+      "dateDeSortie": "2017-03-03",
+      "stock": 15,
+      "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58"
+    },
+    {
+      "id": "5",
+      "titre": "Elden Ring",
+      "plateforme": "PlayStation",
+      "genre": "RPG",
+      "developpeur": "FromSoftware",
+      "dateDeSortie": "2022-02-25",
+      "stock": 10,
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png"
+    },
+    {
+      "id": "6",
+      "titre": "God of War",
+      "plateforme": "PlayStation",
+      "genre": "Action-Aventure",
+      "developpeur": "Santa Monica Studio",
+      "dateDeSortie": "2018-04-20",
+      "stock": 7,
+      "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/0714/vuF88yWPSnDfmFJVTyNJpVwW.png"
+    },
+    {
+      "id": "7",
+      "titre": "The Witcher 3: Wild Hunt",
+      "plateforme": "PC",
+      "genre": "RPG",
+      "developpeur": "CD Projekt",
+      "dateDeSortie": "2015-05-19",
+      "stock": 2,
+      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png"
+    },
+    {
+      "id": "8",
+      "titre": "Red Dead Redemption 2",
+      "plateforme": "PlayStation",
+      "genre": "Action-Aventure",
+      "developpeur": "Rockstar Games",
+      "dateDeSortie": "2018-10-26",
+      "stock": 4,
+      "imageUrl": "https://wallpapers.com/images/hd/1920x1080-red-dead-redemption-2-background-1920-x-1080-djg0mhhl4nedby6d.jpg"
+    },
+    {
+      "id": "9",
+      "titre": "Super Mario Odyssey",
+      "plateforme": "Nintendo Switch",
+      "genre": "Plateforme",
+      "developpeur": "Nintendo",
+      "dateDeSortie": "2017-10-27",
+      "stock": 6,
+      "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5"
+    },
+    {
+      "id": "11",
+      "titre": "The Elder Scrolls V: Skyrim",
+      "plateforme": "PC",
+      "genre": "RPG",
+      "developpeur": "Bethesda Game Studios",
+      "dateDeSortie": "2011-11-11",
+      "stock": 8,
+      "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/header.jpg"
+    },
+    {
+      "id": "12",
+      "titre": "Uncharted 4: A Thief's End",
+      "plateforme": "PlayStation",
+      "genre": "Action-Aventure",
+      "developpeur": "Naughty Dog",
+      "dateDeSortie": "2016-05-10",
+      "stock": 9,
+      "imageUrl": "https://www.giantbomb.com/a/uploads/original/0/3699/2923434-uncharted%204%20-%20a%20thief's%20end%20v3.jpg"
+    },
+    {
+      "id": "13",
+      "titre": "The Legend of Zelda: Ocarina of Time",
+      "plateforme": "Nintendo 64",
+      "genre": "Action-Aventure",
+      "developpeur": "Nintendo",
+      "dateDeSortie": "1998-11-21",
+      "stock": 12,
+      "imageUrl": "https://wallpapercave.com/wp/wp2017866.png"
+    },
+    {
+      "id": "14",
+      "titre": "The Legend of Zelda: Majora's Mask",
+      "plateforme": "Nintendo 64",
+      "genre": "Action-Aventure",
+      "developpeur": "Nintendo",
+      "dateDeSortie": "2000-04-27",
+      "stock": 11,
+      "imageUrl": "https://images2.alphacoders.com/582/thumb-1920-582848.png"
+    },
+    {
+      "id": "15",
+      "titre": "The Legend of Zelda: The Wind Waker",
+      "plateforme": "Nintendo GameCube",
+      "genre": "Action-Aventure",
+      "developpeur": "Nintendo",
+      "dateDeSortie": "2003-12-13",
+      "stock": 13,
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BZGFlNmY3N2QtNjM0Mi00NGQxLTgwNWUtNzRhZjkwY2U0N2U3XkEyXkFqcGdeQXVyMTA3NjAwMDc4._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "16",
+      "titre": "The Legend of Zelda: Twilight Princess",
+      "plateforme": "Nintendo Wii",
+      "genre": "Action-Aventure",
+      "developpeur": "Nintendo",
+      "dateDeSortie": "2006-11-19",
+      "stock": 14,
+      "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/wii-u/t/the-legend-of-zelda-twilight-princess-hd-wii-u/hero"
+    }
+  ],
+  "Reservations": [
+    {
+      "id": "2",
+      "nomClient": "Tibo",
+      "emailClient": "tibo@email.com",
+      "numeroTelCli": "0678453210",
+      "jeuTitre": "The Legend of Zelda: Twilight Princess",
+      "plateforme": "Nintendo",
+      "dateReservation": "2025/04/15",
+      "statutReservation": "En attente"
+    },
+    {
+      "id": "3",
+      "nomClient": "Alex",
+      "emailClient": "alex@email.com",
+      "numeroTelCli": "0712345678",
+      "jeuTitre": "Cyberpunk 2077",
+      "plateforme": "PC",
+      "dateReservation": "2025/05/02",
+      "statutReservation": "Annulee"
+    },
+    {
+      "id": "4",
+      "nomClient": "Thibault",
+      "emailClient": "thibualt@email.com",
+      "numeroTelCli": "0645781236",
+      "jeuTitre": "The Legend of Zelda: Breath of the Wild",
+      "plateforme": "Nintendo Switch",
+      "dateReservation": "2025/06/10",
+      "statutReservation": "En attente"
+    }
+  ]
+}

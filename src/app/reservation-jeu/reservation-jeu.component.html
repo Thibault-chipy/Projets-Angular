@@ -1,0 +1,23 @@
+<div *ngIf="listeReservation.length === 0" class="no-reservation">
+    <h2>Aucune réservation trouvée</h2>
+    <p>Il n'y a pas de réservations à afficher.</p>
+    <a class="button" routerLink="/new-reservation" style="text-decoration: none;">
+        Nouvelle réservation <mat-icon>add</mat-icon>
+    </a>
+</div>
+<div class="reservations">
+    <div *ngFor="let reservation of listeReservation" class="reservation-card">
+        <mat-card>
+            <mat-card-header class="reservation-header">
+                <mat-card-title>Réservations pour {{ reservation.jeuTitre }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <h3>Client : {{ reservation.nomClient }}</h3>
+                <p>Email : {{ reservation.emailClient }}</p>
+                <p>Téléphone : {{ reservation.numeroTelCli }}</p>
+                <p>Date de réservation : {{ reservation.dateReservation | date:'dd/MM/yyyy' }}</p>
+                <p>Statut : {{ reservation.statutReservation }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

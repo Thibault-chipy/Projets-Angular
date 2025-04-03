@@ -28,6 +28,8 @@ import { MatDatepicker } from '@angular/material/datepicker';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {MatDialogModule,MatDialog} from '@angular/material/dialog';
 import { SupprimerReservationComponent } from './supprimer-reservation/supprimer-reservation.component';
+import { ModifierReservationComponent } from './modifier-reservation/modifier-reservation.component';
+import { ReservationJeuComponent } from './reservation-jeu/reservation-jeu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,8 @@ import { SupprimerReservationComponent } from './supprimer-reservation/supprimer
     NewJVComponent,
     NewReservationComponent,
     SupprimerReservationComponent,
+    ModifierReservationComponent,
+    ReservationJeuComponent,
 
 
   ],

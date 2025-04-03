@@ -44,6 +44,15 @@
                 
             </mat-form-field>
 
+        <mat-form-field>
+            <mat-label>Statut de la réservation</mat-label>
+            <mat-select formControlName="statutReservation">
+                <mat-option value="" disabled="">Sélectionnez un statut</mat-option>
+                <mat-option *ngFor="let statut of listeStatut" [value]="statut"> {{statut}}</mat-option>
+
+            </mat-select>
+        </mat-form-field>
+
         <div class="button-group">
             <button mat-raised-button color="primary" type="submit" [disabled]="!formulaire.valid">Réserver</button>
             <button mat-raised-button color="warn" type="button" routerLink="/reservations">Annuler</button>

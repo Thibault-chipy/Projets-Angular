@@ -31,7 +31,7 @@ export class ListReservationComponent implements OnInit {
     this.router.navigate(['/modifier-reservation', id]);
   }
 
-  supprimer(id: string) {
+  supprimer(id: number) {
     const dialogRef = this.dialog.open(SupprimerReservationComponent, {
       width: '300px'
     });
