@@ -1,11 +1,29 @@
+<label id="filtre">Filtrer par plateforme : </label><br>
+<mat-radio-group [(ngModel)]="filtrePlateforme" (change)="filtrerParPlateforme()" color="primary">
+    <mat-radio-button *ngFor="let plateforme of listePlateformes" [value]="plateforme">
+        {{ plateforme }}
+    </mat-radio-button>
+    <mat-radio-button [value]="">Tous</mat-radio-button>
+</mat-radio-group>
+
+<mat-form-field appearance="fill">
+    <mat-label>Rechercher un jeu</mat-label>
+    <input matInput [(ngModel)]="jeuCherche" (ngModelChange)="filtrerParTitre()" />
+    <button mat-icon-button matSuffix (click)="jeuCherche = ''; filtrerParTitre()">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+
+
 <div class="mat-elevation-z8 list-jv">
     <mat-grid-list cols="3" class="game-card">
-        <mat-grid-tile *ngFor="let unJV of listeJV">
+        <mat-grid-tile *ngFor="let unJV of listeJVFiltree">
             <mat-card-content>
                 <a (click)="voir(unJV.id)">
-                     <app-jv *ngIf="unJV.stock>0" [jvInput]="unJV" class="jeu-card"></app-jv>
+                     <app-jv *ngIf="unJV.stock > 0" [jvInput]="unJV" class="jeu-card"></app-jv>
                 </a>
             </mat-card-content> 
         </mat-grid-tile>
     </mat-grid-list>
 </div>
+

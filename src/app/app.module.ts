@@ -30,6 +30,8 @@ import {MatDialogModule,MatDialog} from '@angular/material/dialog';
 import { SupprimerReservationComponent } from './supprimer-reservation/supprimer-reservation.component';
 import { ModifierReservationComponent } from './modifier-reservation/modifier-reservation.component';
 import { ReservationJeuComponent } from './reservation-jeu/reservation-jeu.component';
+import { MatRadioModule,MatRadioGroup } from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +68,9 @@ import { ReservationJeuComponent } from './reservation-jeu/reservation-jeu.compo
     MatDatepicker,
     MatDatepickerModule,
     MatDialogModule,
+    MatRadioModule,
+    MatRadioGroup,
+    FormsModule,  
     
   ],
   providers: [],
