@@ -17,8 +17,8 @@
       "genre": "RPG",
       "developpeur": "CD Projekt",
       "dateDeSortie": "2020-12-10",
-      "stock": 0,
-      "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/bZgtwC0yYc0vDZ1ptKNHMTk9.png"
+      "stock": 1,
+      "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.2W8B9lbNn0rA9O0px4LkaQHaEK&pid=Api"
     },
     {
       "id": "3",
@@ -52,10 +52,10 @@
     },
     {
       "id": "6",
-      "titre": "God of War",
+      "titre": "Spider Man",
       "plateforme": "PlayStation",
       "genre": "Action-Aventure",
-      "developpeur": "Santa Monica Studio",
+      "developpeur": "Insomniac Games",
       "dateDeSortie": "2018-04-20",
       "stock": 7,
       "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/0714/vuF88yWPSnDfmFJVTyNJpVwW.png"
@@ -181,6 +181,106 @@
       "plateforme": "Nintendo Switch",
       "dateReservation": "2025/06/10",
       "statutReservation": "En attente"
+    },
+    {
+      "id": "5",
+      "nomClient": "Marie",
+      "emailClient": "marie@email.com",
+      "numeroTelCli": "0654321987",
+      "jeuTitre": "Elden Ring",
+      "plateforme": "PlayStation",
+      "dateReservation": "2025/07/20",
+      "statutReservation": "En attente"
+    },
+    {
+      "id": "6",
+      "nomClient": "Lucas",
+      "emailClient": "lucas@email.com",
+      "numeroTelCli": "0623456789",
+      "jeuTitre": "The Witcher 3: Wild Hunt",
+      "plateforme": "PC",
+      "dateReservation": "2025/08/15",
+      "statutReservation": "Confirmee"
+    },
+    {
+      "id": "7",
+      "nomClient": "Emma",
+      "emailClient": "emma@email.com",
+      "numeroTelCli": "0612345678",
+      "jeuTitre": "God of War",
+      "plateforme": "PlayStation",
+      "dateReservation": "2025/09/10",
+      "statutReservation": "En attente"
+    },
+    {
+      "id": "8",
+      "nomClient": "Paul",
+      "emailClient": "paul@email.com",
+      "numeroTelCli": "0687654321",
+      "jeuTitre": "Super Mario Odyssey",
+      "plateforme": "Nintendo Switch",
+      "dateReservation": "2025/10/05",
+      "statutReservation": "Annulee"
+    },
+    {
+      "id": "9",
+      "nomClient": "Sophie",
+      "emailClient": "sophie@email.com",
+      "numeroTelCli": "0678901234",
+      "jeuTitre": "Red Dead Redemption 2",
+      "plateforme": "PlayStation",
+      "dateReservation": "2025/11/01",
+      "statutReservation": "Confirmee"
+    },
+    {
+      "id": "10",
+      "nomClient": "Nathan",
+      "emailClient": "nathan@email.com",
+      "numeroTelCli": "0698765432",
+      "jeuTitre": "The Elder Scrolls V: Skyrim",
+      "plateforme": "PC",
+      "dateReservation": "2025/12/25",
+      "statutReservation": "En attente"
+    },
+    {
+      "id": "11",
+      "nomClient": "Julie",
+      "emailClient": "julie@email.com",
+      "numeroTelCli": "0634567890",
+      "jeuTitre": "Uncharted 4: A Thief's End",
+      "plateforme": "PlayStation",
+      "dateReservation": "2026/01/15",
+      "statutReservation": "Confirmee"
+    },
+    {
+      "id": "12",
+      "nomClient": "Antoine",
+      "emailClient": "antoine@email.com",
+      "numeroTelCli": "0643219876",
+      "jeuTitre": "The Legend of Zelda: Ocarina of Time",
+      "plateforme": "Nintendo 64",
+      "dateReservation": "2026/02/10",
+      "statutReservation": "En attente"
+    },
+    {
+      "id": "13",
+      "nomClient": "Claire",
+      "emailClient": "claire@email.com",
+      "numeroTelCli": "0676543210",
+      "jeuTitre": "The Legend of Zelda: Majora's Mask",
+      "plateforme": "Nintendo 64",
+      "dateReservation": "2026/03/05",
+      "statutReservation": "Annulee"
+    },
+    {
+      "id": "14",
+      "nomClient": "Hugo",
+      "emailClient": "hugo@email.com",
+      "numeroTelCli": "0612340987",
+      "jeuTitre": "The Legend of Zelda: The Wind Waker",
+      "plateforme": "Nintendo GameCube",
+      "dateReservation": "2026/04/20",
+      "statutReservation": "Confirmee"
     }
   ]
 }

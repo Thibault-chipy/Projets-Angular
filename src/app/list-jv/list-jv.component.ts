@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   selector: 'app-list-jv',
   templateUrl: './list-jv.component.html',
   styleUrl: './list-jv.component.scss',
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.None
 })
 export class ListJVComponent implements OnInit {
   listeJV: JV[] = [];            

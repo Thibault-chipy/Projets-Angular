@@ -1,9 +1,9 @@
 <label id="filtre">Filtrer par plateforme : </label><br>
-<mat-radio-group [(ngModel)]="filtrePlateforme" (change)="filtrerParPlateforme()" color="primary">
-    <mat-radio-button *ngFor="let plateforme of listePlateformes" [value]="plateforme">
+<mat-radio-group [(ngModel)]="filtrePlateforme" (change)="filtrerParPlateforme()">
+    <mat-radio-button [value]="" class="bouton-radio">Tous</mat-radio-button>
+    <mat-radio-button *ngFor="let plateforme of listePlateformes" [value]="plateforme" class="bouton-radio" >
         {{ plateforme }}
     </mat-radio-button>
-    <mat-radio-button [value]="">Tous</mat-radio-button>
 </mat-radio-group>
 
 <mat-form-field appearance="fill">
