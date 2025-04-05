@@ -6,7 +6,7 @@
 <br>
 
 
-<div *ngIf="!listeReservation.length " class="no-reservation">
+<div *ngIf="listeReservation.length === 0" class="no-reservation">
     <h2>Aucune réservation trouvée</h2>
     <p>Il n'y a pas de réservations à afficher.</p>
     <a class="button" routerLink="/new-reservation" style="text-decoration: none;">
