@@ -14,7 +14,10 @@ import { SupprimerReservationComponent } from '../supprimer-reservation/supprime
 export class ListReservationComponent implements OnInit {
   listeReservation!: Reservation[];
   colonnesAAfficher: string[] = ["idReservation", "nomClient", "emailClient", "jeuTitre", "plateforme", "dateReservation", "statutReservation", "Actions"];
-
+  filtreStatut: string = '';
+  jeuCherche: string = '';
+  listeStatuts: string[] = ['En attente', 'Confirmee', 'Annulee'];
+  listeJeux: string[] = [];
   constructor(
     private reservationService: ReservationService,
     private router: Router,
@@ -44,4 +47,16 @@ export class ListReservationComponent implements OnInit {
       }
     });
   }
+
+  // Filtrer par statut et titre 
+  reservationsFiltrees(): Reservation[] {
+    return this.listeReservation.filter(res => {
+      const filtreStatutOK = this.filtreStatut === '' || res.statutReservation === this.filtreStatut;
+      const filtreJeuOK = this.jeuCherche.trim() === '' || res.jeuTitre.toLowerCase().includes(this.jeuCherche.toLowerCase());
+  
+      return filtreStatutOK && filtreJeuOK;
+    });
+  }
+  
+
 }
