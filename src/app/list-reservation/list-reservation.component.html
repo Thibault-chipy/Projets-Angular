@@ -22,10 +22,16 @@
         {{ statut }}
       </mat-option>
     </mat-select>
-  </mat-form-field><br>
+  </mat-form-field>
+  <br>
   <mat-form-field >
     <mat-label>Rechercher un jeu</mat-label>
     <input matInput [(ngModel)]="jeuCherche" placeholder="Ex : The Legend of Zelda: Twilight Princess">
+  </mat-form-field>
+<br>
+<mat-form-field>
+    <mat-label>Rechercher un client</mat-label>
+    <input matInput [(ngModel)]="clientCherche" placeholder="Ex : Thibault">
   </mat-form-field>
 
 <table mat-table [dataSource]="reservationsFiltrees()" class="tableau">

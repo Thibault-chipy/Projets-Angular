@@ -16,6 +16,7 @@ export class ListReservationComponent implements OnInit {
   colonnesAAfficher: string[] = ["idReservation", "nomClient", "emailClient", "jeuTitre", "plateforme", "dateReservation", "statutReservation", "Actions"];
   filtreStatut: string = '';
   jeuCherche: string = '';
+  clientCherche: string = '';
   listeStatuts: string[] = ['En attente', 'Confirmee', 'Annulee'];
   listeJeux: string[] = [];
   constructor(
@@ -48,13 +49,13 @@ export class ListReservationComponent implements OnInit {
     });
   }
 
-  // Filtrer par statut et titre 
+  // Filtrer par statut, titre de jeu et nom du client
   reservationsFiltrees(): Reservation[] {
     return this.listeReservation.filter(res => {
       const filtreStatutOK = this.filtreStatut === '' || res.statutReservation === this.filtreStatut;
       const filtreJeuOK = this.jeuCherche.trim() === '' || res.jeuTitre.toLowerCase().includes(this.jeuCherche.toLowerCase());
-  
-      return filtreStatutOK && filtreJeuOK;
+      const filtreClientOK = this.clientCherche.trim() === '' || res.nomClient.toLowerCase().includes(this.clientCherche.toLowerCase());
+      return filtreStatutOK && filtreJeuOK && filtreClientOK;
     });
   }
   

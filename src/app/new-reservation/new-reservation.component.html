@@ -51,6 +51,9 @@
                 <mat-option *ngFor="let statut of listeStatut" [value]="statut"> {{statut}}</mat-option>
 
             </mat-select>
+            <mat-error *ngIf="formulaire.get('statutReservation')?.invalid && formulaire.get('statutReservation')?.touched">
+                Veuillez sélectionner un statut.
+            </mat-error>
         </mat-form-field>
 
         <div class="button-group">
